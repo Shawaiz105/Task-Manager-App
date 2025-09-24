@@ -1,0 +1,89 @@
+:root {
+    --border: #d1d5db;   /* halka border */
+    --text: #111827;     /* dark text */
+    --muted: #6b7280;    /* placeholder */
+    --accent: #2563eb;   /* blue */
+    --bg: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial;
+    color: var(--text);
+    background: var(--bg);
+}
+
+ .container {
+     max-width: 720px;
+     margin: 2rem auto;
+     padding: 2rem;
+     background: #fff;
+     border: 1px solid var(--border);
+     border-radius: 14px;
+     box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+ }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: .55rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: .95rem;
+    text-decoration: none;
+    color: var(--text);
+    background: #fff;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.btn:hover {
+    background: #f9fafb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+.btn-primary:hover {
+    background: #1e4ed8;
+}
+
+/* Form Fields */
+.field { margin-bottom: 1.2rem; }
+label {
+    display: block;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: .4rem;
+}
+
+ input, select, textarea {
+     width: 100%;
+     padding: .65rem .85rem;
+     font-size: .95rem;
+     border: 1px solid var(--border);
+     border-radius: 8px;
+     background: #fff;
+     color: var(--text);
+     outline: none;
+     box-sizing: border-box;
+     transition: border-color .2s ease, box-shadow .2s ease;
+ }
+
+input::placeholder, textarea::placeholder {
+    color: var(--muted);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Error */
+.error {
+    color: #dc2626;
+    font-size: .85rem;
+    margin-top: .3rem;
+}
